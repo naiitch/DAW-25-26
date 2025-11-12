@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- Indica el tipo de documento HTML5 -->
+<html lang="es">
+  <!-- Define el idioma principal del documento como español -->
+  <head>
+    <title>CV Nicolás García Terrén</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+    <meta charset="utf-8" />
+    <!-- Establece la codificación de caracteres a UTF-8 -->
+    <style>
+      html {
+        /* Define los estilos generales para toda la página */
+        background: #ddd; /* Color de fondo gris claro */
+        font-family: sans-serif; /* Fuente */
+        font-size: 12px; /* Tamaño base de letra */
+      }
+
+      body {
+        width: 900px; /* Define el ancho del cuerpo principal */
+        background: white; /* Fondo blanco */
+        margin: auto; /* Centra horizontalmente la página */
+        display: flex; /* Usa un diseño flexible con dos columnas */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añade sombra alrededor del cuerpo */
+      }
+
+      /* Columna izquierda */
+      #izquierda {
+        flex: 1.2; /* La columna ocupa una proporción menor que la derecha */
+        background: #70bde4; /* Fondo gris azulado */
+        color: white; /* Texto blanco */
+        padding: 20px; /* Espacio interno */
+        display: flex; /* Contenido en formato flexible */
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: center; /* Centra horizontalmente los elementos */
+      }
+
+      #izquierda img {
+        width: 120px; /* Ancho fijo de la imagen */
+        height: 120px; /* Alto fijo */
+        border-radius: 50%; /* Hace la imagen circular */
+        object-fit: cover; /* Ajusta la imagen para que no se deforme */
+        margin-bottom: 20px; /* Espacio debajo de la imagen */
+      }
+
+      #izquierda h2 {
+        text-align: center; /* Centra el texto */
+        font-size: 1.4rem; /* Tamaño de fuente mediano */
+        margin-bottom: 25px; /* Espacio inferior */
+      }
+
+      #izquierda h3 {
+        font-size: 1rem; /* Tamaño de fuente estándar */
+        margin: 20px 0 10px 0; /* Márgenes arriba y abajo */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Línea decorativa debajo del título */
+        width: 100%; /* Ocupa todo el ancho */
+      }
+
+      #izquierda p,
+      #izquierda li {
+        font-size: 0.9rem; /* Letra un poco más pequeña */
+        line-height: 1.5; /* Espaciado entre líneas */
+      }
+
+      #izquierda ul {
+        padding: 0; /* Elimina el relleno interno */
+        margin: 0; /* Elimina márgenes externos */
+      }
+
+      /* Columna derecha */
+      #derecha {
+        flex: 3; /* Ocupa mayor parte del ancho disponible */
+        padding: 30px 40px; /* Espaciado interno */
+      }
+
+      #derecha h1 {
+        font-size: 1.8rem; /* Título grande */
+        color: #2b3e46; /* Color gris oscuro */
+        margin-bottom: 10px; /* Espacio inferior */
+      }
+
+      #derecha h3 {
+        border-bottom: 2px solid #2b3e46; /* Línea decorativa debajo del título */
+        font-size: 1.1rem; /* Tamaño de fuente medio */
+        padding-bottom: 3px; /* Espacio entre texto y línea */
+        margin: 20px 0 10px 0; /* Márgenes verticales */
+      }
+
+      #derecha article {
+        margin-bottom: 15px; /* Espacio entre artículos */
+      }
+
+      #derecha h4 {
+        font-size: 1rem; /* Tamaño estándar */
+        margin: 0; /* Sin márgenes */
+        padding: 0; /* Sin relleno */
+        font-weight: bold; /* Negrita */
+      }
+
+      #derecha h5 {
+        font-size: 0.9rem; /* Letra más pequeña */
+        margin: 0; /* Sin márgenes */
+        color: #555; /* Color gris medio */
+        font-style: italic; /* Cursiva */
+      }
+
+      #derecha ul {
+        margin: 5px 0 10px 20px; /* Márgenes para listas */
+      }
+
+      #derecha li {
+        margin: 3px 0; /* Espaciado entre elementos de lista */
+      }
+
+      @media (max-width: 768px) {
+        body {
+          flex-direction: column; /* En pantallas pequeñas, cambia a disposición vertical */
+          width: 100%; /* Ocupa todo el ancho disponible */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- COLUMNA IZQUIERDA -->
+    <section id="izquierda">
+      <!-- Sección izquierda del currículum -->
+      <img src="dochudson.jpg" alt="Foto de Nicolás García Terrén" />
+      <!-- Imagen de perfil -->
+      <h2>Nicolás García Terrén</h2>
+      <!-- Nombre principal -->
+
+      <article>
+        <!-- Bloque de información de contacto -->
+        <h3>CONTACTO</h3>
+        <!-- Título de sección -->
+        <p><strong>Teléfono:</strong> +34 611 13 30 51</p>
+        <!-- Teléfono -->
+        <p><strong>Correo electrónico:</strong><br />nicolasgarciaterren@gmail.com</p>
+        <!-- Correo, utilizo el "br" para bajar de línea y que  -->
+      </article>
+
+      <article>
+        <!-- Bloque de habilidades -->
+        <h3>HABILIDADES</h3>
+        <ul>
+          <li>Capacidad de aprendizaje y adaptación</li>
+          <li>Trabajo en equipo y comunicación efectiva</li>
+          <li>Responsabilidad y organización</li>
+          <li>Administración del tiempo</li>
+          <li>Dinámico y proactivo</li>
+        </ul>
+      </article>
+      <article>
+        <!-- Bloque de habilidades -->
+        <h3>DATOS DE INTERÉS</h3>
+        <ul>
+          <li>Disponibilidad geográfica - Valencia y alrededores</li>
+          <li>Menor de 25 años</li>
+          <li>Disponibilidad horaria (jornada nocturna, partida, media jornada)</li>
+          <li>Administración del tiempo</li>
+          <li>Dinámico y proactivo</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- COLUMNA DERECHA -->
+    <section id="derecha">
+      <!-- Sección principal con experiencia y formación -->
+      <h1>Nicolás García Terrén</h1>
+      <!-- Nombre en grande arriba -->
+
+      <article>
+        <!-- Descripción personal -->
+        <h3>DESCRIPCIÓN PERSONAL</h3>
+        <p>
+          Estudiante de Desarrollo de Aplicaciones Web (DAW) con formación en bachillerato
+          científico y gran interés en la programación y las nuevas tecnologías. Busco una primera
+          oportunidad en el sector informático para aplicar y ampliar mis conocimientos en
+          desarrollo de software. Me caracterizo por la capacidad de aprendizaje rápido,
+          responsabilidad y compromiso adquiridos en experiencias laborales previas.
+        </p>
+      </article>
+
+      <article id="experiencia">
+        <!-- Sección de experiencia profesional -->
+        <h3>EXPERIENCIA</h3>
+
+        <div class="trabajo">
+          <!-- Primer trabajo -->
+          <h4>Personal de Apoyo Logístico</h4>
+          <!-- Puesto -->
+          <h5>Apoyo en Empresa Familiar - Burgos Verano 2025</h5>
+          <!-- Fecha y empresa -->
+          <ul>
+            <li>Transporte de material y recogida de productos agrícolas.</li>
+            <li>Organización y gestión básica de tareas en equipo.</li>
+            <li>Desarrollo de responsabilidad y compromiso en entornos de trabajo exigentes.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="formacion">
+        <!-- Sección de educación -->
+        <h3>EDUCACIÓN</h3>
+        <p><strong>CFGS Desarrollo de Aplicaciones Web (DAW)</strong>, 2025 - Actualidad</p>
+        <!-- Título académico -->
+        <p>CEAC FP - Valencia</p>
+        <!-- Centro educativo-->
+        <p><strong>Bachillerato científico</strong>, 2023 - 2025</p>
+        <!-- Título académico -->
+        <p>Colegio Sagrado Corazón - Mislata</p>
+        <!-- Centro educativo -->
+      </article>
+
+      <article id="idiomas">
+        <!-- Sección de idiomas -->
+        <h3>IDIOMAS</h3>
+        <p>Inglés - B1 (sin certificar)</p>
+        <p>Francés - A2 (certificado)</p>
+        <p>Castellano - Nativo</p>
+        <p>Valenciano / Catalán - Nativo</p>
+        <!-- Nivel de idiomas -->
+      </article>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- Define el tipo de documento como HTML5, necesario para que el navegador lo interprete correctamente -->
+<html lang="es">
+<!-- Inicio del documento HTML, con atributo lang="es" para indicar que está en español -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8, para poder usar acentos y caracteres especiales -->
+    
+    <title>Portafolio - Lenguajes de Marcas</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permite que la web sea responsive, se adapta a dispositivos móviles y tablets -->
+
+    <!-- CSS interno con comentarios -->
+    <style>
+        /* --- ESTILOS GENERALES --- */
+
+        body {
+            font-family: Arial, sans-serif; /* Fuente legible y común en todos los sistemas */
+            background-color: #f5f5f5;     /* Fondo gris claro para que el contenido destaque */
+            margin: 0;                      /* Eliminamos el margen por defecto del navegador */
+        }
+
+        /* --- HEADER: TÍTULO Y NAVEGACIÓN --- */
+
+        header {
+            background-color: indigo; /* Fondo morado intenso */
+            color: white;             /* Texto blanco para contraste */
+            text-align: center;       /* Centra el contenido horizontalmente */
+            padding: 20px;            /* Espacio interno dentro del header */
+        }
+
+        nav ul {
+            list-style: none;          /* Eliminamos los puntos de la lista */
+            display: flex;             /* Convertimos la lista en flexbox para alinear horizontalmente */
+            justify-content: center;   /* Centramos los elementos del menú */
+            gap: 10px;                 /* Espacio entre los enlaces del menú */
+            padding: 0;                /* Eliminamos el padding por defecto */
+            margin-top: 10px;          /* Separación con respecto al título */
+        }
+
+        nav ul li a {
+            text-decoration: none;      /* Quitamos subrayado de los enlaces */
+            color: white;               /* Texto blanco */
+            background-color: darkviolet; /* Fondo morado oscuro */
+            padding: 5px 10px;          /* Espacio dentro del enlace */
+            border-radius: 5px;         /* Bordes redondeados para un diseño más suave */
+        }
+
+        nav ul li a:hover {
+            background-color: mediumslateblue; /* Cambio de color al pasar el mouse */
+        }
+
+        /* --- SECCIONES --- */
+
+        section {
+            background-color: white; /* Fondo blanco para las secciones */
+            width: 80%;              /* Ancho de la sección */
+            margin: 20px auto;       /* Centramos la sección horizontalmente y separamos verticalmente */
+            padding: 15px;           /* Espacio interno */
+            border-radius: 8px;      /* Bordes ligeramente redondeados */
+        }
+
+        /* --- PORTAFOLIO CON GRID --- */
+
+        #portafolio {
+            display: grid;                       /* Creamos una rejilla para organizar los elementos */
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+            gap: 20px;                            /* Espacio entre los elementos del grid */
+        }
+
+        #portafolio article {
+            background-color: #fff;               /* Fondo blanco para cada pieza */
+            padding: 10px;                        /* Espacio interno */
+            border-radius: 6px;                   /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+        }
+
+        #portafolio img {
+            width: 100%;     /* La imagen ocupa todo el ancho del artículo */
+            border-radius: 6px; /* Bordes redondeados en la imagen */
+        }
+
+        /* --- FORMULARIO DE CONTACTO --- */
+
+        form {
+            display: flex;             /* Flexbox para organizar los elementos */
+            flex-direction: column;    /* Los elementos van en columna, uno debajo de otro */
+            gap: 10px;                 /* Espacio entre campos del formulario */
+        }
+
+        input, textarea {
+            padding: 5px;              /* Espacio interno dentro de los campos */
+            border-radius: 4px;        /* Bordes redondeados */
+            border: 1px solid #ccc;    /* Borde gris claro */
+        }
+
+        /* --- FOOTER --- */
+
+        footer {
+            text-align: center;         /* Texto centrado */
+            padding: 15px;              /* Espacio interno */
+            background-color: indigo;   /* Fondo morado igual que el header */
+            color: white;               /* Texto blanco */
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Portafolio Examen 2</h1>
+    <!-- Título principal de la página -->
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <!-- Enlace que lleva a la sección Inicio -->
+            <li><a href="#portafolio">Portafolio</a></li>
+            <!-- Enlace que lleva a la sección Portafolio -->
+            <li><a href="#contacto">Contacto</a></li>
+            <!-- Enlace que lleva a la sección Contacto -->
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio">
+    <h3>Inicio</h3>
+    <!-- Subtítulo de la sección -->
+    <p>Este proyecto representa el modelo de datos de nuestro portafolio con HTML y CSS.</p>
+    <!-- Explicación breve del proyecto -->
+</section>
+
+<section id="portafolio">
+    <h3>Portafolio de Piezas</h3>
+    <!-- Subtítulo de la sección de portafolio -->
+
+    <div id="contenedorportafolio">
+        <!-- Contenedor de los artículos del portafolio -->
+
+        <article>
+            <h4>Retro</h4>
+            <!-- Título de la pieza -->
+            <p>Descripción: Hace fotos estilo cyberpunk</p>
+            <!-- Descripción de la pieza -->
+            <p>Categoría: Cámara</p>
+            <!-- Categoría de la pieza -->
+            <p>Fecha: 30-1-2023</p>
+            <!-- Fecha de creación -->
+            <img src="foto1.jpg" alt="Retro">
+            <!-- Imagen de la pieza con texto alternativo -->
+        </article>
+
+        <article>
+            <h4>Clásica</h4>
+            <p>Descripción: Fotografía en blanco y negro y gris</p>
+            <p>Categoría: Blanco y negro</p>
+            <p>Fecha: 29-3-2021</p>
+            <img src="foto2.jpg" alt="Clásica">
+        </article>
+    </div>
+</section>
+
+<section id="contacto">
+    <h3>Contacto</h3>
+    <!-- Subtítulo de la sección de contacto -->
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <!-- Campo para nombre -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <!-- Campo para correo electrónico -->
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje"></textarea>
+        <!-- Campo para mensaje -->
+
+        <input type="submit" value="Enviar">
+        <!-- Botón de enviar formulario -->
+    </form>
+</section>
+
+<footer>
+    <p>Proyecto Lenguajes de Marcas - 1º DAW</p>
+    <!-- Información final o créditos -->
+</footer>
+
+</body>
+</html>
