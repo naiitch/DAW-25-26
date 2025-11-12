@@ -1,0 +1,65 @@
+
+En este ejercicio trabajamos con literales y la estructura fundamental de un programa,
+es decir, declarar variables, asignarles valores y mostrar un resultado por pantalla.
+Con literales nos referimos al tipo de dato que es cada valor que asignamos, como
+cadenas de texto o números en este caso.
+
+Desarollo detallado:
+	1. Declaro las variables con sus respectivos literales. Ej: var fabricante = ""
+	2. Asigno los valores requeridos. Ej: fabricante = "Toyota"
+	3. Muestro la información por pantalla. Ej: console.log(...)
+
+
+ /*
+        declaro las variables con sus respectivos
+        literales, posteriormente les asigno los valores requeridos
+        y, por último, muestro la información por pantalla
+ */
+
+
+A continuación se presenta el código del programa:
+
+<script>
+    /*
+        Programa que gestiona información sobre diferentes modelos de coche
+
+        v0.1 Nicolás García Terrén
+
+        En este ejercicio aplico los conceptos de literales y estructura
+        fundamental en programación 
+    */
+    
+        // Declaro las variables
+        var fabricante = "";
+        var modelo = "";
+        var anio_fabricacion = 0;
+        var potencia_motor = 0.0;
+
+        //  Asigno valores a las variables
+        fabricante = "Toyota ";
+        modelo = "Corolla";
+        anio_fabricacion = 2021;
+        potencia_motor = 184.5;
+
+        // Muestro por consola la información solicitada
+        console.log("El coche es un " + fabricante + modelo + " del anio " + anio_fabricacion + " con potencia de motor " + potencia_motor + " CV.");
+
+</script>
+
+Al ejecutarlo, la consola mostrará el mensaje:
+El coche es un Toyota Corolla del anio 2021 con potencia de motor 184.5 CV.
+
+
+Con este ejercicio he practicado cómo declarar variables con sus respectivos literales,
+asignar valores y mostrar la información por consola. Del mismo modo, diferenciar entre
+los tipos de literales como cadenas de texto o numéricos y posteriormente encadenarlos
+para escribir el mensaje final. Declarar los literales que quieres para cada variable
+mejora la asignación correcta.
+
+
+
+
+
+
+
+

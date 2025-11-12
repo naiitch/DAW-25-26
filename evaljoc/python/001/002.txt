@@ -1,0 +1,64 @@
+
+En programación, las variables se utilizan para almacenar información y utilizarla después.
+Asimismo esta información puede cambiar después, de ahí su nombre de variable.
+En el contexto de este ejercicio, me permite guardar en nombre del vehículo y su precio
+para posteriormente mostrarlos por pantalla. En el contexto de un taller mecánico, resultan 
+útiles las variables para guardan información sobre los vehículos, como por ejemplo, en este caso, 
+el modelo y su precio.
+
+
+Desarrollo detallado:
+	1 - Para declarar las variables usamos la palabra var. Ej: var nombreVehiculo;
+	2 - Después les asignamos valores. Ej: nombreVehiculo = "Ford Mustang";
+	3 - Por último muestro la frase requerida por pantalla con document.write()
+
+
+
+Para mostrar mejor este concepto, a continuación se presenta el ejercicio completo:
+
+<script>
+
+    /*
+        Actividad propuesta sobre almacenar información sobre vehículos
+
+        v0.1 - Nicolás García Terrén
+
+        El ejercicio consiste en la creación de variables y la asignación de valores a las mismas
+    */
+
+    // En este caso no hay liberías quye importar
+
+    // Aquí defino/declaro las variables para el nombre del vehículo y su precio
+    var nombreVehiculo;
+    var precioVehiculo;
+
+    // Aquí asigno cada valor propuesto a la variable correspondiente
+    nombreVehiculo = "Ford Mustang";
+    precioVehiculo = "50000";
+
+    // Finalmente muestro la información por pantalla en un documento web
+    document.write("El coche es un ", nombreVehiculo, " y cuesta ", precioVehiculo, "$");
+
+</script>
+
+
+En este ejercicio he utilizado una parte de lo aprendido hasta ahora, es decir,
+a declarar variables, asignar valores, y a mostrar información por pantalla.
+Además añadir que este ejercicio se relaciona con los conceptos de la unidad, ya que las varibales
+son la base para trabajar en posteriores ejercicios con estructuras de control, arrays y objetos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

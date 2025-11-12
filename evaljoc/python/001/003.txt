@@ -1,0 +1,74 @@
+
+En programación, utilizamos los tipos de datos para clasificar la información
+que almacenamos en las variables. Por ejemplo los números, las cadenas de texto
+o los booleanos. 
+En este ejercicio, los utilizo para señalar la edad del coche, la potencia del motor,
+su color y si es eléctrico o no.
+
+Desarrollo detallado:
+	1 - Para declarar las variables usamos la palabra var. Ej: var edad;
+	2 - Después les asignamos valores. Ej: edad = 10;
+	3 - Por último muestro la información requerida por pantalla con document.write()
+
+A continuación se presenta una aplicación práctica:
+
+<script>
+
+    /*
+        Programa sobre la creación de variables y tipos de datos
+        
+	v0.1 Nicolás García Terrén
+        
+	En este ejercicio declaro las respectivas variables y  
+          las inicializo con el valor requerido
+    */ 
+
+        // Aquí declaro las variables
+        var edad;
+        var potencia_motor;
+        var color_coche;
+        var es_electrico;
+
+        //Aquí asigno valores a las variables
+        edad = 10;
+        potencia_motor = 250;
+        color_coche = "Rojo";
+        es_electrico = false;
+
+
+        //Muestro por pantalla el valor de cada variable
+        document.write("El coche es electrico? ", es_electrico, " <br>");
+        document.write("El coche tiene ", edad, " anios <br>");
+        document.write("La potencia del motor es de ", potencia_motor, " CV <br>");
+        document.write("El coche es de color ", color_coche);
+
+</script>
+
+Al ejecutarlo, el documento HTML mostrará:
+
+El coche es eléctrico? false
+El coche tiene 10 anios
+La potencia del motor es de 250 CV
+El coche es de color Rojo
+
+
+En este ejercicio he puesto en práctica declarar variables, asignarles valores y
+mostrar el resultado por pantalla. Además, algo que me parece curioso es que en
+JavaScript las variables tienen un tipado dinámico, con esto quiero decir que no es
+necesario indicar previamente el tipo de dato que tiene que almacenar ya que el el propio
+lenguaje lo identifica en función del valor que les asignes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
